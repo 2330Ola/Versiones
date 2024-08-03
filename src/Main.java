@@ -1,7 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        saludar("Ana");
-        saludar("");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("¿Cuál es tu nombre? ");
+        String nombre = scanner.nextLine();
+        saludar(nombre);
     }
 
     public static void saludar(String nombre) {
@@ -12,4 +16,5 @@ public class Main {
         }
     }
 }
+
 
